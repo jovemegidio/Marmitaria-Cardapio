@@ -1,0 +1,8 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="600" height="500" viewBox="0 0 600 500">
+  <rect width="600" height="500" rx="16" fill="#fdf6ec"/>
+  <rect x="0" y="0" width="600" height="500" rx="16" fill="#c0392b" opacity="0.03"/>
+  <text x="300" y="190" text-anchor="middle" font-size="90">👩‍🍳</text>
+  <text x="300" y="280" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#c0392b" font-weight="bold">Sabor da Angel</text>
+  <text x="300" y="315" text-anchor="middle" font-family="Arial" font-size="17" fill="#7a5c4f">Do fogão da Angel pra sua mesa</text>
+  <text x="300" y="345" text-anchor="middle" font-family="Arial" font-size="14" fill="#7a5c4f">Com amor e tempero caseiro</text>
+</svg>

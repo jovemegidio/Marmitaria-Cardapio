@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor da Angel - Marmitas Fit & Saudáveis</title>
+    <meta name="description" content="Sabor da Angel - Comida saudável, bem-estar e qualidade de vida. Marmitas fit com temperos naturais e o melhor custo-benefício.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <i class="fas fa-utensils"></i>
+                <span>Sabor da Angel</span>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="#inicio" class="nav-link active">Início</a>
+                <a href="#beneficios" class="nav-link">Benefícios</a>
+                <a href="#cardapio" class="nav-link">Cardápio</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#entregas" class="nav-link">Entregas</a>
+                <a href="#depoimentos" class="nav-link">Depoimentos</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </nav>
+            <div class="header-actions">
+                <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido." class="btn-whatsapp-header" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i> Pedir agora
+                </a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+        <div class="hero-particles" id="particles"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="hero-badge">�️ Marmitas feitas com amor</span>
+                <h1>Sabor caseiro <br>com <span class="highlight">carinho</span> e <span class="highlight">qualidade.</span></h1>
+                <p>Marmitas artesanais preparadas com ingredientes frescos e temperos naturais. Do fogão da Angel direto pra sua mesa, com todo o sabor de comida de verdade.</p>
+                <div class="hero-buttons">
+                    <a href="#cardapio" class="btn btn-primary">
+                        <i class="fas fa-utensils"></i> Ver Cardápio
+                    </a>
+                    <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido." class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i> Fazer Pedido
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <strong>500+</strong>
+                        <span>Clientes satisfeitos</span>
+                    </div>
+                    <div class="stat">
+                        <strong>30+</strong>
+                        <span>Opções no cardápio</span>
+                    </div>
+                    <div class="stat">
+                        <strong>4.9</strong>
+                        <span>⭐ Avaliação</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-img-wrapper">
+                    <img src="img/hero-marmita.svg" alt="Marmita fit saudável Sabor da Angel">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-pepper-hot"></i>
+                        <span>Tempero Caseiro</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-heart"></i>
+                        <span>Feito com Amor</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C360,120 720,0 1440,60 L1440,120 L0,120 Z" fill="#fffcf7"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Ribbon Marmitaria -->
+    <div class="marmitaria-ribbon">
+        <div class="ribbon-text">
+            <span>🍛 Marmitas Caseiras</span>
+            <span>🔥 Feitas no Fogão</span>
+            <span>❤️ Com Amor e Carinho</span>
+            <span>🌿 Temperos Naturais</span>
+            <span>📦 Entrega Rápida</span>
+            <span>⭐ +500 Clientes Satisfeitos</span>
+            <span>🍛 Marmitas Caseiras</span>
+            <span>🔥 Feitas no Fogão</span>
+            <span>❤️ Com Amor e Carinho</span>
+            <span>🌿 Temperos Naturais</span>
+            <span>📦 Entrega Rápida</span>
+            <span>⭐ +500 Clientes Satisfeitos</span>
+        </div>
+    </div>
+
+    <!-- Benefícios -->
+    <section class="benefits" id="beneficios">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Por que nos escolher?</span>
+                <h2>Nossos <span class="highlight">Benefícios</span></h2>
+                <p>Nosso kit é a perfeita solução para o dia a dia corrido das grandes cidades</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="fade-up">
+                    <div class="benefit-icon">
+                        <i class="fas fa-fire-burner"></i>
+                    </div>
+                    <h3>Feito no Fogão</h3>
+                    <p>Comida de verdade preparada no fogão, como na casa da vovó. Nada de industrializado!</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-delay="100">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Praticidade</h3>
+                    <p>Chega de se preocupar com o almoço! Sua marmita pronta, quentinha e no horário certo.</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-delay="200">
+                    <div class="benefit-icon">
+                        <i class="fas fa-pepper-hot"></i>
+                    </div>
+                    <h3>Tempero de Verdade</h3>
+                    <p>Temperos naturais e aquele sabor que só comida feita com amor tem. Quem provou, voltou!</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-delay="300">
+                    <div class="benefit-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Preço Justo</h3>
+                    <p>Comida boa não precisa ser cara. Melhor custo-benefício pra comer bem todo dia!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cardápio Digital -->
+    <section class="menu-section" id="cardapio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nosso Cardápio</span>
+                <h2>Escolha suas <span class="highlight">Marmitas</span></h2>
+                <p>Selecione a categoria e descubra nossas deliciosas opções</p>
+            </div>
+
+            <!-- Filtros -->
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="kits">Kits</button>
+                <button class="filter-btn" data-filter="frango">Frango</button>
+                <button class="filter-btn" data-filter="carne">Carne</button>
+                <button class="filter-btn" data-filter="peixe">Peixe</button>
+                <button class="filter-btn" data-filter="vegano">Vegano</button>
+                <button class="filter-btn" data-filter="lowcarb">Low Carb</button>
+            </div>
+
+            <!-- Grid de Produtos -->
+            <div class="menu-grid" id="menuGrid">
+                <!-- Kits -->
+                <div class="menu-card" data-category="kits">
+                    <div class="menu-card-badge sale">Oferta</div>
+                    <div class="menu-card-img">
+                        <img src="img/kit-10-250.svg" alt="Kit 10 unidades 250g">
+                        <div class="menu-card-overlay">
+                            <button class="btn-quick-view" data-item="kit10-250">Ver detalhes</button>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-category">Kit Marmita Fit</span>
+                        <h3>Kit 10 unidades – 250g</h3>
+                        <p>10 marmitas fit de 250g com opções variadas do cardápio. Ideal para a semana.</p>
+                        <div class="menu-card-footer">
+                            <div class="menu-card-price">
+                                <span class="old-price">R$ 199,90</span>
+                                <span class="current-price">R$ 169,90</span>
+                            </div>
+                            <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20o%20Kit%2010%20unidades%20250g" class="btn-order" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="kits">
+                    <div class="menu-card-badge new">Novo</div>
+                    <div class="menu-card-img">
+                        <img src="img/kit-10-300.svg" alt="Kit 10 unidades 300g">
+                        <div class="menu-card-overlay">
+                            <button class="btn-quick-view" data-item="kit10-300">Ver detalhes</button>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-category">Kit Marmita Fit</span>
+                        <h3>Kit 10 unidades – 300g</h3>
+                        <p>10 marmitas fit de 300g com porções generosas e combinações equilibradas.</p>
+                        <div class="menu-card-footer">
+                            <div class="menu-card-price">
+                                <span class="old-price">R$ 219,90</span>
+                                <span class="current-price">R$ 189,90</span>
+                            </div>
+                            <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20o%20Kit%2010%20unidades%20300g" class="btn-order" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="kits">
+                    <div class="menu-card-badge popular">Popular</div>
+                    <div class="menu-card-img">
+                        <img src="img/kit-20-250.svg" alt="Kit 20 unidades 250g">
+                        <div class="menu-card-overlay">
+                            <button class="btn-quick-view" data-item="kit20-250">Ver detalhes</button>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-category">Kit Marmita Fit</span>
+                        <h3>Kit 20 unidades – 250g</h3>
+                        <p>20 marmitas fit de 250g. Perfeito para quem busca praticidade no mês inteiro.</p>
+                        <div class="menu-card-footer">
+                            <div class="menu-card-price">
+                                <span class="current-price">R$ 319,90</span>
+                            </div>
+                            <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20o%20Kit%2020%20unidades%20250g" class="btn-order" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="kits">
+                    <div class="menu-card-img">
+                        <img src="img/kit-30-250.svg" alt="Kit 30 unidades 250g">
+                        <div class="menu-card-overlay">
+                            <button class="btn-quick-view" data-item="kit30-250">Ver detalhes</button>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-category">Kit Marmita Fit</span>
+                        <h3>Kit 30 unidades – 250g</h3>
+                        <p>30 marmitas fit de 250g. O melhor custo-benefício para o mês completo!</p>
+                        <div class="menu-card-footer">
+                            <div class="menu-card-price">
+                                <span class="current-price">R$ 470,90</span>
+                            </div>
+                            <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20o%20Kit%2030%20unidades%20250g" class="btn-order" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frango -->
+                <div class="menu-card" data-category="frango">
+                    <div class="menu-card-badge popular">Popular</div>
+                    <div class="menu-card-img">
+                        <img src="img/frango-grelhado.svg" alt="Frango Grelhado com Legumes">
+                        <div class="menu-card-overlay">
+                            <button class="btn-quick-view" data-item="frango-grelhado">Ver detalhes</button>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-category">Frango</span>
+                        <h3>Frango Grelhado com Legumes</h3>
+                        <p>Peito de frango grelhado, arroz integral, brócolis e cenoura. 320 kcal.</p>
+                        <div class="menu-card-info">
+                            <span><i class="fas fa-fire"></i> 320 kcal</span>
+                            <span><i class="fas fa-drumstick-bite"></i> 35g prot</span>
+                        </div>
+                        <div class="menu-card-footer">
+                            <div class="menu-card-price">
+                                <span class="current-price">R$ 18,90</span>
+                            </div>
+                            <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20Frango%20Grelhado%20com%20Legumes" class="btn-order" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="frango">
+                    <div class="menu-card-img">
+                        <img src="img/frango-desfiado.svg" alt="Frango Desfiado Fit">
+                        <div class="menu-card-overlay">
+                            <button class="btn-quick-view" data-item="frango-desfiado">Ver detalhes</button>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-category">Frango</span>
+                        <h3>Frango Desfiado Fit</h3>
+                        <p>Frango desfiado com batata-doce, abobrinha e temperos naturais. 290 kcal.</p>
+                        <div class="menu-card-info">
+                            <span><i class="fas fa-fire"></i> 290 kcal</span>
+                            <span><i class="fas fa-drumstick-bite"></i> 30g prot</span>
+                        </div>
+                        <div class="menu-card-footer">
+                            <div class="menu-card-price">
+                                <span class="current-price">R$ 17,90</span>
+                            </div>
+                            <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20Frango%20Desfiado%20Fit" class="btn-order" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="frango lowcarb">
+                    <div class="menu-card-badge new">Low Carb</div>
+                    <div class="menu-card-img">
+                        <img src="img/frango-pesto.svg" alt="Frango ao Pesto">
+                        <div class="menu-card-overlay">
+                            <button class="btn-quick-view" data-item="frango-pesto">Ver detalhes</button>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-category">Frango · Low Carb</span>
+                        <h3>Frango ao Pesto com Abobrinha</h3>
+                        <p>Filé de frango ao molho pesto, abobrinha grelhada e mix de folhas. 280 kcal.</p>
+                        <div class="menu-card-info">
+                            <span><i class="fas fa-fire"></i> 280 kcal</span>
+                            <span><i class="fas fa-drumstick-bite"></i> 33g prot</span>
+                        </div>
+                        <div class="menu-card-footer">
+                            <div class="menu-card-price">
+                                <span class="current-price">R$ 19,90</span>
+                            </div>
+                            <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20Frango%20ao%20Pesto" class="btn-order" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carne -->
+                <div class="menu-card" data-category="carne">
+                    <div class="menu-card-badge popular">Popular</div>
+                    <div class="menu-card-img">
+                        <img src="img/carne-patinho.svg" alt="Patinho Moído Fit">
+                        <div class="menu-card-overlay">
+                            <button class="btn-quick-view" data-item="patinho">Ver detalhes</button>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-category">Carne</span>
+                        <h3>Patinho Moído Fit</h3>
+                        <p>Carne de patinho moída, arroz integral, feijão e salada verde. 350 kcal.</p>
+                        <div class="menu-card-info">
+                            <span><i class="fas fa-fire"></i> 350 kcal</span>
+                            <span><i class="fas fa-drumstick-bite"></i> 32g prot</span>
+                        </div>
+                        <div class="menu-card-footer">
+                            <div class="menu-card-price">
+                                <span class="current-price">R$ 19,90</span>
+                            </div>
+                            <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20Patinho%20Moído%20Fit" class="btn-order" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="carne">
+                    <div class="menu-card-img">
+                        <img src="img/carne-panqueca.svg" alt="Panqueca de Carne">
+                        <div class="menu-card-overlay">
+                            <button class="btn-quick-view" data-item="panqueca">Ver detalhes</button>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-category">Carne</span>
+                        <h3>Panqueca de Carne Fit</h3>
+                        <p>Panqueca integral recheada com carne moída e molho de tomate natural. 310 kcal.</p>
+                        <div class="menu-card-info">
+                            <span><i class="fas fa-fire"></i> 310 kcal</span>
+                            <span><i class="fas fa-drumstick-bite"></i> 28g prot</span>
+                        </div>
+                        <div class="menu-card-footer">
+                            <div class="menu-card-price">
+                                <span class="current-price">R$ 18,90</span>
+                            </div>
+                            <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20Panqueca%20de%20Carne%20Fit" class="btn-order" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="carne lowcarb">
+                    <div class="menu-card-img">
+                        <img src="img/carne-strogonoff.svg" alt="Strogonoff Fit">
+                        <div class="menu-card-overlay">
+                            <button class="btn-quick-view" data-item="strogonoff">Ver detalhes</button>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-category">Carne · Low Carb</span>
+                        <h3>Strogonoff Fit</h3>
+                        <p>Strogonoff de carne com creme de castanhas, arroz integral e batata palha fit. 340 kcal.</p>
+                        <div class="menu-card-info">
+                            <span><i class="fas fa-fire"></i> 340 kcal</span>
+                            <span><i class="fas fa-drumstick-bite"></i> 30g prot</span>
+                        </div>
+                        <div class="menu-card-footer">
+                            <div class="menu-card-price">
+                                <span class="current-price">R$ 20,90</span>
+                            </div>
+                            <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20Strogonoff%20Fit" class="btn-order" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Peixe -->
+                <div class="menu-card" data-category="peixe">
+                    <div class="menu-card-img">
+                        <img src="img/peixe-tilapia.svg" alt="Tilápia Grelhada">
+                        <div class="menu-card-overlay">
+                            <button class="btn-quick-view" data-item="tilapia">Ver detalhes</button>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-category">Peixe</span>
+                        <h3>Tilápia Grelhada</h3>
+                        <p>Filé de tilápia grelhada com purê de batata-doce e legumes salteados. 300 kcal.</p>
+                        <div class="menu-card-info">
+                            <span><i class="fas fa-fire"></i> 300 kcal</span>
+                            <span><i class="fas fa-fish"></i> 34g prot</span>
+                        </div>
+                        <div class="menu-card-footer">
+                            <div class="menu-card-price">
+                                <span class="current-price">R$ 22,90</span>
+                            </div>
+                            <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20Tilápia%20Grelhada" class="btn-order" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="peixe lowcarb">
+                    <div class="menu-card-badge new">Low Carb</div>
+                    <div class="menu-card-img">
+                        <img src="img/peixe-salmao.svg" alt="Salmão Grelhado">
+                        <div class="menu-card-overlay">
+                            <button class="btn-quick-view" data-item="salmao">Ver detalhes</button>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-category">Peixe · Low Carb</span>
+                        <h3>Salmão Grelhado com Aspargos</h3>
+                        <p>Filé de salmão grelhado com aspargos, tomate cereja e azeite. 330 kcal.</p>
+                        <div class="menu-card-info">
+                            <span><i class="fas fa-fire"></i> 330 kcal</span>
+                            <span><i class="fas fa-fish"></i> 38g prot</span>
+                        </div>
+                        <div class="menu-card-footer">
+                            <div class="menu-card-price">
+                                <span class="current-price">R$ 29,90</span>
+                            </div>
+                            <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20Salmão%20Grelhado" class="btn-order" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vegano -->
+                <div class="menu-card" data-category="vegano">
+                    <div class="menu-card-img">
+                        <img src="img/vegano-bowl.svg" alt="Buddha Bowl Vegano">
+                        <div class="menu-card-overlay">
+                            <button class="btn-quick-view" data-item="buddha-bowl">Ver detalhes</button>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-category">Vegano</span>
+                        <h3>Buddha Bowl Vegano</h3>
+                        <p>Bowl com grão-de-bico, quinoa, abacate, cenoura, pepino e molho tahine. 310 kcal.</p>
+                        <div class="menu-card-info">
+                            <span><i class="fas fa-fire"></i> 310 kcal</span>
+                            <span><i class="fas fa-leaf"></i> 18g prot</span>
+                        </div>
+                        <div class="menu-card-footer">
+                            <div class="menu-card-price">
+                                <span class="current-price">R$ 19,90</span>
+                            </div>
+                            <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20Buddha%20Bowl%20Vegano" class="btn-order" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="vegano lowcarb">
+                    <div class="menu-card-img">
+                        <img src="img/vegano-legumes.svg" alt="Mix de Legumes Grelhados">
+                        <div class="menu-card-overlay">
+                            <button class="btn-quick-view" data-item="legumes-grelhados">Ver detalhes</button>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-category">Vegano · Low Carb</span>
+                        <h3>Mix de Legumes Grelhados</h3>
+                        <p>Abobrinha, berinjela, pimentão, cogumelos e tofu grelhados com ervas. 250 kcal.</p>
+                        <div class="menu-card-info">
+                            <span><i class="fas fa-fire"></i> 250 kcal</span>
+                            <span><i class="fas fa-leaf"></i> 15g prot</span>
+                        </div>
+                        <div class="menu-card-footer">
+                            <div class="menu-card-price">
+                                <span class="current-price">R$ 17,90</span>
+                            </div>
+                            <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20Mix%20de%20Legumes%20Grelhados" class="btn-order" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="about" id="sobre">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="img/about.svg" alt="Sobre a Sabor da Angel">
+                    <div class="about-experience">
+                        <strong>5+</strong>
+                        <span>anos de experiência</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-tag">Conheça nossa história</span>
+                    <h2>Sabor da <span class="highlight">Angel</span></h2>
+                    <p>Nascemos da paixão por cozinhar e do desejo de levar comida de verdade para a mesa de quem não tem tempo de cozinhar. Cada marmita é preparada com ingredientes frescos, temperos naturais e muito carinho.</p>
+                    <p>Nossa missão é oferecer refeições saborosas com aquele gostinho de comida caseira, feita no fogão, com excelência no atendimento e preço justo para o dia a dia.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Ingredientes selecionados</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Temperos 100% naturais</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Embalagens seguras</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Preparado com amor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Entregas -->
+    <section class="delivery" id="entregas">
+        <div class="container">
+            <div class="delivery-grid">
+                <div class="delivery-content">
+                    <span class="section-tag">Entrega rápida</span>
+                    <h2>Entregas <span class="highlight">Ágeis</span></h2>
+                    <p>Entrega rápida para sua região! Para pedidos efetuados até as 16h, entregamos no mesmo dia ou o cliente pode optar por receber no próximo dia útil ou uma data que lhe atenda melhor.</p>
+                    <p>Entregas de <strong>Segunda a Sexta das 10h às 20h</strong>. Entraremos em contato para que você possa agendar o pedido no horário que preferir.</p>
+                    <div class="delivery-features">
+                        <div class="delivery-feature">
+                            <div class="delivery-feature-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div>
+                                <h4>Entrega no mesmo dia</h4>
+                                <p>Pedidos até 16h</p>
+                            </div>
+                        </div>
+                        <div class="delivery-feature">
+                            <div class="delivery-feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4>Horário flexível</h4>
+                                <p>Agende o melhor horário</p>
+                            </div>
+                        </div>
+                        <div class="delivery-feature">
+                            <div class="delivery-feature-icon">
+                                <i class="fas fa-snowflake"></i>
+                            </div>
+                            <div>
+                                <h4>Embalagem térmica</h4>
+                                <p>Chega fresquinha!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="delivery-image">
+                    <img src="img/delivery.svg" alt="Entrega Sabor da Angel">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="testimonials" id="depoimentos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Avaliações</span>
+                <h2>O que nossos <span class="highlight">clientes</span> dizem?</h2>
+                <p>Veja o que quem já experimentou tem a dizer</p>
+            </div>
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Chegou super rápido! Vocês ganharam mais uma cliente, estou muito satisfeita com tudo. Obrigada! ❤️"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">AS</div>
+                        <div>
+                            <strong>Andreia Santos</strong>
+                            <span>Cliente desde 2023</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"A comida é ótima! Tudo me agradou, desde a agilidade na entrega até o sabor, o tempero é incrível. Com certeza comprarei novamente."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">CA</div>
+                        <div>
+                            <strong>Carlos Augusto</strong>
+                            <span>Cliente desde 2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Meus parabéns ao pessoal da Sabor da Angel, superou as minhas expectativas, o sabor é SUPER. Vou indicar para amigos!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">SS</div>
+                        <div>
+                            <strong>Simone Silva</strong>
+                            <span>Cliente desde 2023</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Finalmente achei comida fit que tem SABOR de verdade! As marmitas são muito bem preparadas e a entrega sempre pontual."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">RF</div>
+                        <div>
+                            <strong>Rodrigo Ferreira</strong>
+                            <span>Cliente desde 2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Recomendo de olhos fechados! Estou no terceiro mês pedindo e cada vez mais satisfeita. Perdi 4kg sem sofrer!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">ML</div>
+                        <div>
+                            <strong>Mariana Lima</strong>
+                            <span>Cliente desde 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn prev" id="prevBtn" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots" id="sliderDots"></div>
+                <button class="slider-btn next" id="nextBtn" aria-label="Próximo"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formas de Pagamento -->
+    <section class="payment">
+        <div class="container">
+            <h3>Formas de Pagamento</h3>
+            <div class="payment-methods">
+                <div class="payment-item">
+                    <i class="fas fa-credit-card"></i>
+                    <span>Crédito</span>
+                </div>
+                <div class="payment-item">
+                    <i class="fas fa-credit-card"></i>
+                    <span>Débito</span>
+                </div>
+                <div class="payment-item">
+                    <i class="fas fa-qrcode"></i>
+                    <span>PIX</span>
+                </div>
+                <div class="payment-item">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <span>Dinheiro</span>
+                </div>
+                <div class="payment-item">
+                    <i class="fas fa-utensils"></i>
+                    <span>Vale Refeição</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contato">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="#" class="logo">
+                        <i class="fas fa-utensils"></i>
+                        <span>Sabor da Angel</span>
+                    </a>
+                    <p>Marmitas caseiras preparadas com amor, ingredientes frescos e temperos naturais. Aquele sabor de comida de verdade que você merece!</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/sabordaangel" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/sabordaangel" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Mapa do Site</h4>
+                    <a href="#inicio">Início</a>
+                    <a href="#beneficios">Benefícios</a>
+                    <a href="#cardapio">Cardápio</a>
+                    <a href="#sobre">Sobre Nós</a>
+                    <a href="#entregas">Entregas</a>
+                    <a href="#depoimentos">Depoimentos</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Cardápio</h4>
+                    <a href="#cardapio" data-filter-link="kits">Kits de Marmitas</a>
+                    <a href="#cardapio" data-filter-link="frango">Frango</a>
+                    <a href="#cardapio" data-filter-link="carne">Carne</a>
+                    <a href="#cardapio" data-filter-link="peixe">Peixe</a>
+                    <a href="#cardapio" data-filter-link="vegano">Vegano</a>
+                    <a href="#cardapio" data-filter-link="lowcarb">Low Carb</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <a href="mailto:contato@sabordaangel.com.br">
+                        <i class="fas fa-envelope"></i> contato@sabordaangel.com.br
+                    </a>
+                    <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i> (11) 99999-9999
+                    </a>
+                    <a href="https://www.instagram.com/sabordaangel" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i> @sabordaangel
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sabor da Angel – Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5511999999999?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
