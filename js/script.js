@@ -228,4 +228,312 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     `;
     document.head.appendChild(style);
+
+    // ===== PRODUCT DETAIL MODAL =====
+    const productData = {
+        'kit10-250': {
+            img: 'img/kit-10-250.svg',
+            badge: 'Oferta',
+            category: 'Kit Marmita Fit',
+            title: 'Kit 10 unidades – 250g',
+            desc: '10 marmitas fit de 250g com opções variadas do cardápio. Ideal para quem quer manter a alimentação saudável durante a semana com praticidade e sabor. Você escolhe os sabores!',
+            nutrients: [
+                { icon: 'fas fa-box', text: '10 unidades' },
+                { icon: 'fas fa-weight-hanging', text: '250g cada' },
+                { icon: 'fas fa-snowflake', text: 'Congeladas' }
+            ],
+            ingredients: ['Frango', 'Carne', 'Arroz integral', 'Legumes variados', 'Temperos naturais', 'Azeite'],
+            oldPrice: 'R$ 199,90',
+            price: 'R$ 169,90',
+            whatsapp: 'https://wa.me/5511999999999?text=Olá!%20Quero%20o%20Kit%2010%20unidades%20250g'
+        },
+        'kit10-300': {
+            img: 'img/kit-10-300.svg',
+            badge: 'Novo',
+            category: 'Kit Marmita Fit',
+            title: 'Kit 10 unidades – 300g',
+            desc: '10 marmitas fit de 300g com porções generosas e combinações equilibradas. Perfeito para quem precisa de mais energia no dia a dia sem abrir mão da saúde.',
+            nutrients: [
+                { icon: 'fas fa-box', text: '10 unidades' },
+                { icon: 'fas fa-weight-hanging', text: '300g cada' },
+                { icon: 'fas fa-snowflake', text: 'Congeladas' }
+            ],
+            ingredients: ['Frango', 'Carne', 'Peixe', 'Arroz integral', 'Batata-doce', 'Legumes variados', 'Temperos naturais'],
+            oldPrice: 'R$ 219,90',
+            price: 'R$ 189,90',
+            whatsapp: 'https://wa.me/5511999999999?text=Olá!%20Quero%20o%20Kit%2010%20unidades%20300g'
+        },
+        'kit20-250': {
+            img: 'img/kit-20-250.svg',
+            badge: 'Popular',
+            category: 'Kit Marmita Fit',
+            title: 'Kit 20 unidades – 250g',
+            desc: '20 marmitas fit de 250g. Perfeito para quem busca praticidade no mês inteiro. Escolha seus sabores favoritos e receba tudo pronto para aquecer!',
+            nutrients: [
+                { icon: 'fas fa-box', text: '20 unidades' },
+                { icon: 'fas fa-weight-hanging', text: '250g cada' },
+                { icon: 'fas fa-snowflake', text: 'Congeladas' }
+            ],
+            ingredients: ['Frango', 'Carne', 'Peixe', 'Arroz integral', 'Legumes variados', 'Temperos naturais', 'Azeite'],
+            oldPrice: null,
+            price: 'R$ 319,90',
+            whatsapp: 'https://wa.me/5511999999999?text=Olá!%20Quero%20o%20Kit%2020%20unidades%20250g'
+        },
+        'kit30-250': {
+            img: 'img/kit-30-250.svg',
+            badge: null,
+            category: 'Kit Marmita Fit',
+            title: 'Kit 30 unidades – 250g',
+            desc: '30 marmitas fit de 250g. O melhor custo-benefício para o mês completo! Monte seu cardápio personalizado com os sabores que mais gosta.',
+            nutrients: [
+                { icon: 'fas fa-box', text: '30 unidades' },
+                { icon: 'fas fa-weight-hanging', text: '250g cada' },
+                { icon: 'fas fa-snowflake', text: 'Congeladas' }
+            ],
+            ingredients: ['Frango', 'Carne', 'Peixe', 'Vegano', 'Arroz integral', 'Batata-doce', 'Legumes variados', 'Temperos naturais'],
+            oldPrice: null,
+            price: 'R$ 470,90',
+            whatsapp: 'https://wa.me/5511999999999?text=Olá!%20Quero%20o%20Kit%2030%20unidades%20250g'
+        },
+        'frango-grelhado': {
+            img: 'img/frango-grelhado.svg',
+            badge: 'Popular',
+            category: 'Frango',
+            title: 'Frango Grelhado com Legumes',
+            desc: 'Peito de frango grelhado suculento acompanhado de arroz integral, brócolis frescos e cenoura. Uma refeição leve, nutritiva e cheia de sabor.',
+            nutrients: [
+                { icon: 'fas fa-fire', text: '320 kcal' },
+                { icon: 'fas fa-drumstick-bite', text: '35g proteína' },
+                { icon: 'fas fa-bread-slice', text: '28g carbs' },
+                { icon: 'fas fa-droplet', text: '8g gordura' }
+            ],
+            ingredients: ['Peito de frango', 'Arroz integral', 'Brócolis', 'Cenoura', 'Azeite', 'Temperos naturais', 'Sal rosa'],
+            oldPrice: null,
+            price: 'R$ 18,90',
+            whatsapp: 'https://wa.me/5511999999999?text=Olá!%20Quero%20Frango%20Grelhado%20com%20Legumes'
+        },
+        'frango-desfiado': {
+            img: 'img/frango-desfiado.svg',
+            badge: null,
+            category: 'Frango',
+            title: 'Frango Desfiado Fit',
+            desc: 'Frango desfiado temperado com ervas, acompanhado de batata-doce e abobrinha grelhada. Sabor caseiro com temperos 100% naturais.',
+            nutrients: [
+                { icon: 'fas fa-fire', text: '290 kcal' },
+                { icon: 'fas fa-drumstick-bite', text: '30g proteína' },
+                { icon: 'fas fa-bread-slice', text: '32g carbs' },
+                { icon: 'fas fa-droplet', text: '6g gordura' }
+            ],
+            ingredients: ['Frango desfiado', 'Batata-doce', 'Abobrinha', 'Cebola', 'Alho', 'Temperos naturais'],
+            oldPrice: null,
+            price: 'R$ 17,90',
+            whatsapp: 'https://wa.me/5511999999999?text=Olá!%20Quero%20Frango%20Desfiado%20Fit'
+        },
+        'frango-pesto': {
+            img: 'img/frango-pesto.svg',
+            badge: 'Low Carb',
+            category: 'Frango · Low Carb',
+            title: 'Frango ao Pesto com Abobrinha',
+            desc: 'Filé de frango ao molho pesto caseiro, abobrinha grelhada e mix de folhas verdes. Opção low carb sofisticada e saborosa.',
+            nutrients: [
+                { icon: 'fas fa-fire', text: '280 kcal' },
+                { icon: 'fas fa-drumstick-bite', text: '33g proteína' },
+                { icon: 'fas fa-bread-slice', text: '12g carbs' },
+                { icon: 'fas fa-droplet', text: '12g gordura' }
+            ],
+            ingredients: ['Filé de frango', 'Molho pesto', 'Abobrinha', 'Mix de folhas', 'Tomate cereja', 'Azeite extra virgem'],
+            oldPrice: null,
+            price: 'R$ 19,90',
+            whatsapp: 'https://wa.me/5511999999999?text=Olá!%20Quero%20Frango%20ao%20Pesto'
+        },
+        'patinho': {
+            img: 'img/carne-patinho.svg',
+            badge: 'Popular',
+            category: 'Carne',
+            title: 'Patinho Moído Fit',
+            desc: 'Carne de patinho moída de primeira qualidade, arroz integral, feijão e salada verde. O clássico brasileiro em versão fit e saudável.',
+            nutrients: [
+                { icon: 'fas fa-fire', text: '350 kcal' },
+                { icon: 'fas fa-drumstick-bite', text: '32g proteína' },
+                { icon: 'fas fa-bread-slice', text: '35g carbs' },
+                { icon: 'fas fa-droplet', text: '10g gordura' }
+            ],
+            ingredients: ['Patinho moído', 'Arroz integral', 'Feijão', 'Alface', 'Tomate', 'Cebola', 'Temperos naturais'],
+            oldPrice: null,
+            price: 'R$ 19,90',
+            whatsapp: 'https://wa.me/5511999999999?text=Olá!%20Quero%20Patinho%20Moído%20Fit'
+        },
+        'panqueca': {
+            img: 'img/carne-panqueca.svg',
+            badge: null,
+            category: 'Carne',
+            title: 'Panqueca de Carne Fit',
+            desc: 'Panqueca integral recheada com carne moída temperada e molho de tomate natural caseiro. Comfort food na versão saudável!',
+            nutrients: [
+                { icon: 'fas fa-fire', text: '310 kcal' },
+                { icon: 'fas fa-drumstick-bite', text: '28g proteína' },
+                { icon: 'fas fa-bread-slice', text: '30g carbs' },
+                { icon: 'fas fa-droplet', text: '9g gordura' }
+            ],
+            ingredients: ['Massa integral', 'Carne moída', 'Molho de tomate natural', 'Cebola', 'Alho', 'Orégano', 'Temperos naturais'],
+            oldPrice: null,
+            price: 'R$ 18,90',
+            whatsapp: 'https://wa.me/5511999999999?text=Olá!%20Quero%20Panqueca%20de%20Carne%20Fit'
+        },
+        'strogonoff': {
+            img: 'img/carne-strogonoff.svg',
+            badge: null,
+            category: 'Carne · Low Carb',
+            title: 'Strogonoff Fit',
+            desc: 'Strogonoff de carne com creme de castanhas, arroz integral e batata palha fit. Todo o sabor do strogonoff sem culpa!',
+            nutrients: [
+                { icon: 'fas fa-fire', text: '340 kcal' },
+                { icon: 'fas fa-drumstick-bite', text: '30g proteína' },
+                { icon: 'fas fa-bread-slice', text: '25g carbs' },
+                { icon: 'fas fa-droplet', text: '14g gordura' }
+            ],
+            ingredients: ['Carne em tiras', 'Creme de castanhas', 'Arroz integral', 'Batata palha fit', 'Cogumelos', 'Cebola', 'Temperos naturais'],
+            oldPrice: null,
+            price: 'R$ 20,90',
+            whatsapp: 'https://wa.me/5511999999999?text=Olá!%20Quero%20Strogonoff%20Fit'
+        },
+        'tilapia': {
+            img: 'img/peixe-tilapia.svg',
+            badge: null,
+            category: 'Peixe',
+            title: 'Tilápia Grelhada',
+            desc: 'Filé de tilápia grelhada suculenta com purê de batata-doce cremoso e legumes salteados. Rica em ômega-3 e proteínas.',
+            nutrients: [
+                { icon: 'fas fa-fire', text: '300 kcal' },
+                { icon: 'fas fa-fish', text: '34g proteína' },
+                { icon: 'fas fa-bread-slice', text: '26g carbs' },
+                { icon: 'fas fa-droplet', text: '7g gordura' }
+            ],
+            ingredients: ['Filé de tilápia', 'Batata-doce', 'Abobrinha', 'Cenoura', 'Vagem', 'Azeite', 'Limão', 'Temperos naturais'],
+            oldPrice: null,
+            price: 'R$ 22,90',
+            whatsapp: 'https://wa.me/5511999999999?text=Olá!%20Quero%20Tilápia%20Grelhada'
+        },
+        'salmao': {
+            img: 'img/peixe-salmao.svg',
+            badge: 'Low Carb',
+            category: 'Peixe · Low Carb',
+            title: 'Salmão Grelhado com Aspargos',
+            desc: 'Filé de salmão grelhado com aspargos frescos, tomate cereja e azeite extra virgem. Premium e low carb – o melhor do cardápio.',
+            nutrients: [
+                { icon: 'fas fa-fire', text: '330 kcal' },
+                { icon: 'fas fa-fish', text: '38g proteína' },
+                { icon: 'fas fa-bread-slice', text: '8g carbs' },
+                { icon: 'fas fa-droplet', text: '16g gordura' }
+            ],
+            ingredients: ['Filé de salmão', 'Aspargos', 'Tomate cereja', 'Azeite extra virgem', 'Limão siciliano', 'Ervas finas'],
+            oldPrice: null,
+            price: 'R$ 29,90',
+            whatsapp: 'https://wa.me/5511999999999?text=Olá!%20Quero%20Salmão%20Grelhado'
+        },
+        'buddha-bowl': {
+            img: 'img/vegano-bowl.svg',
+            badge: null,
+            category: 'Vegano',
+            title: 'Buddha Bowl Vegano',
+            desc: 'Bowl colorido e nutritivo com grão-de-bico, quinoa, abacate, cenoura, pepino e molho tahine caseiro. 100% vegetal e delicioso!',
+            nutrients: [
+                { icon: 'fas fa-fire', text: '310 kcal' },
+                { icon: 'fas fa-leaf', text: '18g proteína' },
+                { icon: 'fas fa-bread-slice', text: '38g carbs' },
+                { icon: 'fas fa-droplet', text: '12g gordura' }
+            ],
+            ingredients: ['Grão-de-bico', 'Quinoa', 'Abacate', 'Cenoura', 'Pepino', 'Molho tahine', 'Gergelim', 'Limão'],
+            oldPrice: null,
+            price: 'R$ 19,90',
+            whatsapp: 'https://wa.me/5511999999999?text=Olá!%20Quero%20Buddha%20Bowl%20Vegano'
+        },
+        'legumes-grelhados': {
+            img: 'img/vegano-legumes.svg',
+            badge: null,
+            category: 'Vegano · Low Carb',
+            title: 'Mix de Legumes Grelhados',
+            desc: 'Abobrinha, berinjela, pimentão, cogumelos e tofu grelhados com ervas finas. Leve, saboroso e 100% vegetal.',
+            nutrients: [
+                { icon: 'fas fa-fire', text: '250 kcal' },
+                { icon: 'fas fa-leaf', text: '15g proteína' },
+                { icon: 'fas fa-bread-slice', text: '18g carbs' },
+                { icon: 'fas fa-droplet', text: '10g gordura' }
+            ],
+            ingredients: ['Abobrinha', 'Berinjela', 'Pimentão', 'Cogumelos', 'Tofu', 'Ervas finas', 'Azeite', 'Alho'],
+            oldPrice: null,
+            price: 'R$ 17,90',
+            whatsapp: 'https://wa.me/5511999999999?text=Olá!%20Quero%20Mix%20de%20Legumes%20Grelhados'
+        }
+    };
+
+    const modal = document.getElementById('productModal');
+    const modalClose = document.getElementById('modalClose');
+
+    function openProductModal(itemKey) {
+        const data = productData[itemKey];
+        if (!data) return;
+
+        document.getElementById('modalImg').src = data.img;
+        document.getElementById('modalImg').alt = data.title;
+        document.getElementById('modalCategory').textContent = data.category;
+        document.getElementById('modalTitle').textContent = data.title;
+        document.getElementById('modalDesc').textContent = data.desc;
+
+        // Badge
+        const badgeEl = document.getElementById('modalBadge');
+        if (data.badge) {
+            badgeEl.textContent = data.badge;
+            badgeEl.style.display = 'block';
+        } else {
+            badgeEl.style.display = 'none';
+        }
+
+        // Nutrients
+        const nutrientsEl = document.getElementById('modalNutrients');
+        nutrientsEl.innerHTML = data.nutrients.map(n =>
+            '<span><i class="' + n.icon + '"></i> ' + n.text + '</span>'
+        ).join('');
+
+        // Ingredients
+        const ingredientsList = document.getElementById('modalIngredientsList');
+        ingredientsList.innerHTML = data.ingredients.map(i =>
+            '<li>' + i + '</li>'
+        ).join('');
+
+        // Price
+        const priceEl = document.getElementById('modalPrice');
+        priceEl.innerHTML = (data.oldPrice ? '<span class="old-price">' + data.oldPrice + '</span>' : '') +
+            '<span class="current-price">' + data.price + '</span>';
+
+        // WhatsApp order
+        document.getElementById('modalOrderBtn').href = data.whatsapp;
+
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeProductModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    // Attach click to all "Ver detalhes" buttons
+    document.querySelectorAll('.btn-quick-view').forEach(btn => {
+        btn.addEventListener('click', () => {
+            openProductModal(btn.dataset.item);
+        });
+    });
+
+    modalClose.addEventListener('click', closeProductModal);
+
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeProductModal();
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeProductModal();
+        }
+    });
 });

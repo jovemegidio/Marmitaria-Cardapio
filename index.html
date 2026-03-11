@@ -793,6 +793,35 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- Modal Detalhes do Produto -->
+    <div class="product-modal-overlay" id="productModal">
+        <div class="product-modal">
+            <button class="product-modal-close" id="modalClose" aria-label="Fechar">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="product-modal-img">
+                <img id="modalImg" src="" alt="">
+                <span class="product-modal-badge" id="modalBadge"></span>
+            </div>
+            <div class="product-modal-body">
+                <span class="product-modal-category" id="modalCategory"></span>
+                <h2 id="modalTitle"></h2>
+                <p class="product-modal-desc" id="modalDesc"></p>
+                <div class="product-modal-nutrients" id="modalNutrients"></div>
+                <div class="product-modal-ingredients" id="modalIngredients">
+                    <h4><i class="fas fa-list-ul"></i> Ingredientes</h4>
+                    <ul id="modalIngredientsList"></ul>
+                </div>
+                <div class="product-modal-footer">
+                    <div class="product-modal-price" id="modalPrice"></div>
+                    <a id="modalOrderBtn" href="#" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i> Pedir agora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Back to top -->
     <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
         <i class="fas fa-chevron-up"></i>
