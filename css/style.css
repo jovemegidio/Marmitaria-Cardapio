@@ -341,6 +341,7 @@ a {
     position: relative;
     display: flex;
     justify-content: center;
+    z-index: 2;
 }
 
 .hero-img-wrapper {
@@ -378,16 +379,16 @@ a {
 }
 
 .card-1 {
-    top: 40px;
-    right: -20px;
+    top: 30px;
+    right: 0;
     animation-delay: 0s;
 }
 
 .card-1 i { color: #c0392b; }
 
 .card-2 {
-    bottom: 40px;
-    left: -20px;
+    bottom: 30px;
+    left: 0;
     animation-delay: 1.5s;
 }
 
